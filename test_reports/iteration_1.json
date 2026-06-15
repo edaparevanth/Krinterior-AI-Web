@@ -1,0 +1,43 @@
+{
+  "summary": "Backend-only pytest suite for KRINTERIOR AI. 21 tests covering auth (signup/login/me/google), auth enforcement on protected routes, design generation (Gemini Nano Banana image + Gemini 2.5 Flash JSON for estimate/space/vastu), project CRUD, vastu re-analysis, and 404 handling. Clean run: 21/21 passed (60s). Important: design/generate is intermittently flaky due to the upstream Gemini text model occasionally returning hallucinated/garbled JSON (~25% failure rate during testing). Once cleanly, full E2E flow (generate -> save -> list -> get -> patch -> vastu re-analyze -> delete) works end-to-end.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "/api/design/generate", "issue": "Intermittent 502 'AI returned malformed response'. Gemini 2.5 Flash sometimes emits truncated/garbled JSON (e.g., starts a furniture item then drifts into unrelated text). Observed ~25% failure rate across 3 full runs."},
+      {"endpoint": "/api/design/generate", "issue": "On first run after fresh boot, a single 500 was returned with 'Budget has been exceeded! Current cost: 0.00455, Max budget: 0.001' from litellm. Did not recur after; appears to be a transient EMERGENT_LLM_KEY rate/budget window. Worth confirming EMERGENT_LLM_KEY budget is correctly provisioned for production usage."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/backend_test.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [
+    "Harden /api/design/generate against intermittent malformed Gemini JSON: wrap each call_gemini_text_json invocation in a small retry (e.g., 2 attempts) before returning 502, OR fall back to a default estimate/space/vastu JSON when parsing fails so the user still gets the generated image + a usable response.",
+    "Confirm EMERGENT_LLM_KEY production budget is not capped at $0.001 (saw a budget_exceeded 400 from litellm during first call). If this recurs in production, generation will repeatedly 500.",
+    "Optional: log raw AI text on JSON parse failure (already added by tester in call_gemini_text_json) — keep this for ongoing observability."
+  ],
+  "critical_code_review_comments": [
+    "server.py (~600 lines) is fine for now but if more endpoints are added, split into routers (auth, projects, design, vastu).",
+    "call_gemini_text_json has no retry/fallback; a single bad LLM response kills the whole /design/generate request after the (paid) image generation step has already succeeded — user pays the cost but gets a 502. Add retry or graceful fallback.",
+    "passlib bcrypt warning on startup ('module bcrypt has no attribute __about__') is benign but cosmetic; pin bcrypt<4 or upgrade passlib in requirements.",
+    "POST /api/auth/google/session sets cookie with samesite='none' + secure=True — correct for cross-site OAuth flow; ok.",
+    "All endpoints correctly strip MongoDB _id from responses; no leakage observed.",
+    "Authorization enforcement verified on /projects, /design/generate, /vastu/analyze, /auth/me — all return 401 without bearer."
+  ],
+  "updated_files": [
+    "/app/backend/tests/backend_test.py (new)",
+    "/app/backend/server.py (added one logger.error line in call_gemini_text_json to record malformed AI text — non-functional debug improvement only)"
+  ],
+  "success_rate": {"backend": "100% (21/21 on clean run; design/generate is intermittently flaky ~75% pass rate due to upstream LLM)", "frontend": "skipped per request"},
+  "test_credentials": "test.user.krinterior@example.com / Test@123456 (seeded). Also dynamically created test_signup_<uuid>@example.com accounts.",
+  "seed_data_creation": "Each TestDesignAndProjects run creates one project named TEST_proj_<uuid> and deletes it at the end (test_09_delete_project). Dynamic signup users (test_signup_*) remain in DB; safe to bulk-clean via email LIKE 'test_signup_%' if needed.",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Backend tests live in /app/backend/tests/backend_test.py. Pytest junit -> /app/test_reports/pytest/pytest_results.xml. Use REACT_APP_BACKEND_URL from frontend/.env. Test creds in /app/memory/test_credentials.md. The only flaky endpoint is /api/design/generate (Gemini text JSON occasionally garbled); rerun once or twice if it 502s. EMERGENT_LLM_KEY budget should be monitored — saw one 400 budget_exceeded early on. Frontend was NOT tested per scope.",
+  "rca of the issue": "Intermittent /design/generate 502 RCA: Gemini 2.5 Flash (called for furniture estimate / space / vastu JSON) occasionally returns hallucinated content that breaks _extract_json (observed sample: items array started cleanly then drifted into unrelated 'immunotherapy / synthetic biology' text). _extract_json then returns None, code raises HTTPException(502). Reproduction: call /api/design/generate 4-5 times; ~1 in 4 fails. Mitigation: add retry (2-3x) inside call_gemini_text_json on json parse failure; optionally use response_format='json_object' if supported via emergentintegrations, or supply a default fallback JSON so the (already-paid) generated image is still returned. The 500 budget_exceeded RCA: litellm reported Max budget 0.001 USD already exceeded by single image call (0.00455). Likely the EMERGENT_LLM_KEY has a per-window cap; verify provisioning."
+}
