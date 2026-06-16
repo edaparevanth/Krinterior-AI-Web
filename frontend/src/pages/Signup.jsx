@@ -45,8 +45,8 @@ export default function Signup() {
 
       <form onSubmit={submit} style={{display:"grid", gap:14}}>
         <Field icon={<User size={16}/>} placeholder="Full name" value={name} onChange={setName} testId="name-input"/>
-        <Field icon={<Mail size={16}/>} placeholder="Email" type="email" value={email} onChange={setEmail} testId="email-input"/>
-        <Field icon={<Lock size={16}/>} placeholder="Password (min 6 chars)" type="password" value={password} onChange={setPassword} testId="password-input"/>
+        <Field icon={<Mail size={16}/>} placeholder="Email" type="email" value={email} onChange={setEmail} testId="signup-email-input"/>
+        <Field icon={<Lock size={16}/>} placeholder="Password (min 6 chars)" type="password" value={password} onChange={setPassword} testId="signup-password-input"/>
         <button type="submit" disabled={loading} data-testid="signup-submit-btn" className="btn-primary" style={{justifyContent:"center", padding:"14px"}}>
           {loading ? <Loader2 size={16} className="spin-slow"/> : <>Create account <ArrowRight size={16}/></>}
         </button>
