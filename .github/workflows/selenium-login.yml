@@ -54,9 +54,6 @@ jobs:
         id: setup-chrome
         uses: browser-actions/setup-chrome@v1
 
-      - name: Setup Chromedriver
-        uses: nanasess/setup-chromedriver@v2
-
       - name: Start frontend
         working-directory: frontend
         run: |
