@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Krinterior-AI-Web/static/css/main.0665c979.css",
+    "main.js": "/Krinterior-AI-Web/static/js/main.e04917df.js",
+    "index.html": "/Krinterior-AI-Web/index.html",
+    "main.0665c979.css.map": "/Krinterior-AI-Web/static/css/main.0665c979.css.map",
+    "main.e04917df.js.map": "/Krinterior-AI-Web/static/js/main.e04917df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0665c979.css",
+    "static/js/main.e04917df.js"
+  ]
+}
