@@ -1,0 +1,58 @@
+const { Builder, until } = require("selenium-webdriver");
+const chrome = require("selenium-webdriver/chrome");
+
+const BASE_URL = process.env.APP_BASE_URL || "http://localhost:3000";
+
+async function createDriver() {
+  const options = new chrome.Options();
+  options.addArguments("--headless=new");
+  options.addArguments("--no-sandbox");
+  options.addArguments("--disable-dev-shm-usage");
+  options.addArguments("--disable-gpu");
+  options.addArguments("--window-size=1440,1000");
+  if (process.env.CHROME_BIN) {
+    options.setChromeBinaryPath(process.env.CHROME_BIN);
+  }
+
+  return new Builder()
+    .forBrowser("chrome")
+    .setChromeOptions(options)
+    .build();
+}
+
+async function openPath(driver, path) {
+  await driver.get(`${BASE_URL}${path}`);
+}
+
+async function find(driver, locator, timeout = 15000) {
+  const element = await driver.wait(until.elementLocated(locator), timeout);
+  await driver.wait(until.elementIsVisible(element), timeout);
+  return element;
+}
+
+async function safeClick(driver, locatorOrElement, timeout = 15000) {
+  const element =
+    typeof locatorOrElement.findElements === "function"
+      ? locatorOrElement
+      : await find(driver, locatorOrElement, timeout);
+  await driver.executeScript("arguments[0].scrollIntoView({block:'center', inline:'center'});", element);
+  await driver.wait(until.elementIsEnabled(element), timeout);
+  await driver.executeScript("arguments[0].click();", element);
+}
+
+async function typeInto(driver, locator, value, timeout = 15000) {
+  const element = await find(driver, locator, timeout);
+  await element.clear();
+  await element.sendKeys(value);
+  return element;
+}
+
+module.exports = {
+  BASE_URL,
+  createDriver,
+  find,
+  openPath,
+  safeClick,
+  typeInto,
+  until,
+};

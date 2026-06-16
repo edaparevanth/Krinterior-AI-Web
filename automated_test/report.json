@@ -1,0 +1,140 @@
+{
+  "checks": [
+    {
+      "details": {
+        "count": 16,
+        "source": "source"
+      },
+      "name": "Endpoint discovery",
+      "status": "pass"
+    },
+    {
+      "details": {
+        "count": 0,
+        "findings": []
+      },
+      "name": "Secret scanning",
+      "status": "pass"
+    },
+    {
+      "details": {
+        "reason": "No base_url supplied; generated offline report only."
+      },
+      "name": "AuthN bypass checks",
+      "status": "skipped"
+    },
+    {
+      "details": {
+        "reason": "No base_url supplied; generated offline report only."
+      },
+      "name": "AuthZ checks",
+      "status": "skipped"
+    },
+    {
+      "details": {
+        "reason": "No base_url supplied; generated offline report only."
+      },
+      "name": "IDOR checks",
+      "status": "skipped"
+    },
+    {
+      "details": {
+        "reason": "No base_url supplied; generated offline report only."
+      },
+      "name": "RBAC matrix",
+      "status": "skipped"
+    },
+    {
+      "details": {
+        "reason": "No base_url supplied; generated offline report only."
+      },
+      "name": "JWT tampering tests",
+      "status": "skipped"
+    },
+    {
+      "details": {
+        "reason": "No base_url supplied; generated offline report only."
+      },
+      "name": "Injection detection",
+      "status": "skipped"
+    },
+    {
+      "details": {
+        "reason": "No base_url supplied; generated offline report only."
+      },
+      "name": "Rate limiting tests",
+      "status": "skipped"
+    }
+  ],
+  "endpoint_discovery": {
+    "count": 16,
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/api/auth/signup"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/login"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/google/session"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/logout"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/me"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/auth/me"
+      },
+      {
+        "method": "POST",
+        "path": "/api/design/generate"
+      },
+      {
+        "method": "GET",
+        "path": "/api/design/status/{job_id}"
+      },
+      {
+        "method": "POST",
+        "path": "/api/design/analyze"
+      },
+      {
+        "method": "POST",
+        "path": "/api/projects"
+      },
+      {
+        "method": "GET",
+        "path": "/api/projects"
+      },
+      {
+        "method": "GET",
+        "path": "/api/projects/{project_id}"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/projects/{project_id}"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/projects/{project_id}"
+      },
+      {
+        "method": "POST",
+        "path": "/api/vastu/analyze"
+      },
+      {
+        "method": "GET",
+        "path": "/api/"
+      }
+    ]
+  },
+  "generated_at": "2026-06-16T13:27:56Z",
+  "status": "pass"
+}

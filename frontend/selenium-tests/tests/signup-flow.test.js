@@ -1,53 +1,29 @@
-const { Builder, By, until } = require("selenium-webdriver");
-require("chromedriver");
+const { By } = require("selenium-webdriver");
 const assert = require("assert");
+const { createDriver, openPath, safeClick, typeInto, until } = require("../helpers/driver");
 
 describe("KRINTERIOR Signup Flow", function () {
   this.timeout(60000);
-
   let driver;
 
   before(async () => {
-    driver = await new Builder().forBrowser("chrome").build();
+    driver = await createDriver();
   });
 
   after(async () => {
-    await driver.quit();
+    if (driver) await driver.quit();
   });
 
   it("should signup successfully", async () => {
-
-    // Generate unique email every run
     const uniqueEmail = `test${Date.now()}@gmail.com`;
 
-    await driver.get("http://localhost:3000/signup");
+    await openPath(driver, "/signup");
+    await typeInto(driver, By.css('[data-testid="name-input"]'), "Selenium Test");
+    await typeInto(driver, By.css('[data-testid="signup-email-input"]'), uniqueEmail);
+    await typeInto(driver, By.css('[data-testid="signup-password-input"]'), "password123");
+    await safeClick(driver, By.css('[data-testid="signup-submit-btn"]'));
 
-    await driver.wait(
-      until.elementLocated(By.css('[data-testid="name-input"]')),
-      10000
-    );
-
-    await driver.findElement(
-      By.css('[data-testid="name-input"]')
-    ).sendKeys("Selenium Test");
-
-    await driver.findElement(
-      By.css('[data-testid="signup-email-input"]')
-    ).sendKeys(uniqueEmail);
-
-    await driver.findElement(
-      By.css('[data-testid="signup-password-input"]')
-    ).sendKeys("password123");
-
-    await driver.findElement(
-      By.css('[data-testid="signup-submit-btn"]')
-    ).click();
-
-    await driver.wait(
-      until.urlContains("/dashboard"),
-      15000
-    );
-
+    await driver.wait(until.urlContains("/dashboard"), 15000);
     const url = await driver.getCurrentUrl();
 
     assert.ok(url.includes("/dashboard"));

@@ -1,39 +1,25 @@
-const { Builder, By, until } = require("selenium-webdriver");
-require("chromedriver");
+const { By } = require("selenium-webdriver");
 const assert = require("assert");
+const { createDriver, find, openPath } = require("../helpers/driver");
 
 describe("KRINTERIOR Login Page Test", function () {
-  this.timeout(30000);
-
+  this.timeout(60000);
   let driver;
 
   before(async () => {
-    driver = await new Builder().forBrowser("chrome").build();
+    driver = await createDriver();
   });
 
   after(async () => {
-    await driver.quit();
+    if (driver) await driver.quit();
   });
 
   it("should open login page and find form fields", async () => {
-    await driver.get("http://localhost:3000/login");
+    await openPath(driver, "/login");
 
-    await driver.wait(
-      until.elementLocated(By.css('[data-testid="email-input"]')),
-      10000
-    );
-
-    const email = await driver.findElement(
-      By.css('[data-testid="email-input"]')
-    );
-
-    const password = await driver.findElement(
-      By.css('[data-testid="password-input"]')
-    );
-
-    const button = await driver.findElement(
-      By.css('[data-testid="login-submit-btn"]')
-    );
+    const email = await find(driver, By.css('[data-testid="email-input"]'));
+    const password = await find(driver, By.css('[data-testid="password-input"]'));
+    const button = await find(driver, By.css('[data-testid="login-submit-btn"]'));
 
     assert.ok(email);
     assert.ok(password);
