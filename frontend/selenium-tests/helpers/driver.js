@@ -14,10 +14,16 @@ async function createDriver() {
     options.setChromeBinaryPath(process.env.CHROME_BIN);
   }
 
-  return new Builder()
+  let builder = new Builder()
     .forBrowser("chrome")
-    .setChromeOptions(options)
-    .build();
+    .setChromeOptions(options);
+
+  if (process.env.CHROMEDRIVER_BIN) {
+    const serviceBuilder = new chrome.ServiceBuilder(process.env.CHROMEDRIVER_BIN);
+    builder = builder.setChromeService(serviceBuilder);
+  }
+
+  return builder.build();
 }
 
 async function openPath(driver, path) {

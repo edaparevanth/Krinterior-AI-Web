@@ -53,6 +53,8 @@ jobs:
       - name: Setup Chrome
         id: setup-chrome
         uses: browser-actions/setup-chrome@v1
+        with:
+          install-chromedriver: true
 
       - name: Start frontend
         working-directory: frontend
@@ -71,6 +73,7 @@ jobs:
         working-directory: frontend
         env:
           CHROME_BIN: ${{ steps.setup-chrome.outputs.chrome-path }}
+          CHROMEDRIVER_BIN: ${{ steps.setup-chrome.outputs.chromedriver-path }}
         run: npm run selenium:ci
 
       - name: Setup Python
