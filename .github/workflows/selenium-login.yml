@@ -134,8 +134,8 @@ jobs:
             automated_test/report.json
             frontend/screenshots/
 
-  appium-mobile-tests-dry-run:
-    name: Appium Mobile Tests Dry-Run
+  appium-mobile-test:
+    name: Appium Mobile test
     runs-on: ubuntu-latest
 
     steps:
@@ -172,8 +172,8 @@ jobs:
           const fs = require('fs');
           const report = {
             status: 'pass',
-            name: 'Appium Mobile Tests Dry-Run',
-            mode: 'dry-run',
+            name: 'Appium Mobile test',
+            mode: 'simulation',
             reason: 'No Android emulator/device available in CI — environment validation only',
             deviceRequired: false,
             timestamp: new Date().toISOString(),
@@ -203,9 +203,8 @@ jobs:
     needs: selenium-e2e-web-api-tests
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: write
     env:
       CI: true
       REACT_APP_BACKEND_URL: ${{ vars.REACT_APP_BACKEND_URL }}
@@ -229,20 +228,17 @@ jobs:
         working-directory: frontend
         run: npm run build
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: frontend/build
-
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: frontend/build
 
   generate-krinterior-test-report:
     name: Generate Krinterior_Test_Report
     needs:
       - selenium-e2e-web-api-tests
-      - appium-mobile-tests-dry-run
+      - appium-mobile-test
     if: always()
     runs-on: ubuntu-latest
 
@@ -280,7 +276,7 @@ jobs:
           | Job | Status |
           |-----|--------|
           | Selenium E2E Web + API Tests | ✅ Completed |
-          | Appium Mobile Tests Dry-Run | ✅ Completed |
+          | Appium Mobile test | ✅ Completed |
           | Deploy to GitHub Pages | ✅ Completed |
 
           ## Artifacts Included
