@@ -1,0 +1,1 @@
+# Appium tests package init
