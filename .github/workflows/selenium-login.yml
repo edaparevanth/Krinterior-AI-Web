@@ -52,13 +52,26 @@ jobs:
       - name: Install backend dependencies
         run: python -m pip install --upgrade pip && pip install -r backend/requirements.txt
 
-      - name: Start backend
-        working-directory: backend
-        run: |
           mkdir -p ../backend-logs
-          python -m uvicorn server:app --host 0.0.0.0 --port 8000 > ../backend-logs/server.log 2>&1 &
-          npx wait-on http://127.0.0.1:8000/docs --timeout 600000
-          echo "Backend is ready"
+          # Start FastAPI in background, capture logs
+          uvicorn server:app --host 0.0.0.0 --port 8000 > ../backend-logs/server.log 2>&1 &
+          BACKEND_PID=$!
+          echo "Backend PID: $BACKEND_PID"
+          # Wait for docs endpoint, retry up to 12 times (≈1 min)
+          for i in $(seq 1 12); do
+            if curl -s http://127.0.0.1:8000/docs > /dev/null; then
+              echo "Backend is ready"
+              break
+            fi
+            echo "Waiting for backend... ($i/12)"
+            sleep 5
+          done
+          # If still not ready, dump logs and fail
+          if ! curl -s http://127.0.0.1:8000/docs > /dev/null; then
+            echo "❌ Backend failed to start – dumping logs:"
+            cat ../backend-logs/server.log
+            exit 1
+          fi
 
       - name: Install frontend dependencies
         working-directory: frontend
