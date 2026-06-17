@@ -18,7 +18,11 @@ if not BASE_URL:
     except Exception:
         pass
 
-assert BASE_URL, "REACT_APP_BACKEND_URL must be configured"
+if not BASE_URL:
+    pytest.skip(
+        "REACT_APP_BACKEND_URL is not configured; skipping live backend integration tests",
+        allow_module_level=True,
+    )
 BASE_URL = BASE_URL.rstrip("/")
 API = f"{BASE_URL}/api"
 
