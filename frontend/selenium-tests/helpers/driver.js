@@ -1,3 +1,5 @@
+const fs = require("fs");
+const path = require("path");
 const { Builder, until } = require("selenium-webdriver");
 const chrome = require("selenium-webdriver/chrome");
 
@@ -53,8 +55,18 @@ async function typeInto(driver, locator, value, timeout = 15000) {
   return element;
 }
 
+async function captureScreenshot(driver, name) {
+  const screenshotsDir = path.resolve(process.cwd(), "screenshots");
+  fs.mkdirSync(screenshotsDir, { recursive: true });
+  const filePath = path.join(screenshotsDir, `${name}-${Date.now()}.png`);
+  const base64 = await driver.takeScreenshot();
+  fs.writeFileSync(filePath, base64, "base64");
+  return filePath;
+}
+
 module.exports = {
   BASE_URL,
+  captureScreenshot,
   createDriver,
   find,
   openPath,
