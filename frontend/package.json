@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://edaparevanth.github.io/Krinterior-AI-Web",
   "dependencies": {
     "@hookform/resolvers": "5.0.1",
     "@radix-ui/react-accordion": "1.2.8",
@@ -37,7 +38,7 @@
     "clsx": "2.1.1",
     "cmdk": "1.1.1",
     "cra-template": "1.2.0",
-    "date-fns": "4.1.0",
+    "date-fns": "2.30.0",
     "dayjs": "1.11.13",
     "embla-carousel-react": "8.6.0",
     "framer-motion": "11.18.0",
@@ -45,9 +46,9 @@
     "lodash": "4.18.1",
     "lucide-react": "0.516.0",
     "next-themes": "0.4.6",
-    "react": "19.0.0",
+    "react": "18.3.1",
     "react-day-picker": "8.10.1",
-    "react-dom": "19.0.0",
+    "react-dom": "18.3.1",
     "react-hook-form": "7.56.2",
     "react-resizable-panels": "3.0.1",
     "react-router-dom": "7.5.1",
@@ -63,7 +64,10 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "selenium:ci": "mocha \"selenium-tests/tests/*.test.js\" --reporter spec --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=index,quiet=true,overwrite=true,html=true,json=true --reporter mocha-junit-reporter --reporter-options mochaFile=selenium-results/junit.xml,toConsole=false"
   },
   "browserslist": {
     "production": [
@@ -83,6 +87,8 @@
     "@emergentbase/visual-edits": "https://assets.emergent.sh/npm/emergentbase-visual-edits-1.0.8.tgz",
     "@eslint/js": "9.23.0",
     "@types/lodash": "4.17.24",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
     "autoprefixer": "10.4.20",
     "dotenv": "16.4.5",
     "eslint": "9.23.0",
@@ -90,8 +96,13 @@
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.4",
     "eslint-plugin-react-hooks": "5.2.0",
+    "gh-pages": "^6.3.0",
     "globals": "15.15.0",
+    "mocha": "^11.7.6",
+    "mocha-junit-reporter": "^2.3.0",
+    "mochawesome": "^7.1.4",
     "postcss": "8.4.49",
+    "selenium-webdriver": "^4.44.0",
     "tailwindcss": "3.4.17"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
