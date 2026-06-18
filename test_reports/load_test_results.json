@@ -1,0 +1,4058 @@
+{
+  "summary": {
+    "concurrent_users": 100,
+    "test_duration_seconds": 120.0,
+    "total_requests": 570,
+    "successful_requests": 551,
+    "failed_requests": 19,
+    "success_rate": 96.66666666666667,
+    "average_rps": 4.75,
+    "avg_response_time_ms": 288.7674957437846,
+    "min_response_time_ms": 18.89822362763082,
+    "max_response_time_ms": 1276.9330599591085,
+    "p90_response_time_ms": 622.6167431453005,
+    "p95_response_time_ms": 835.7319300895479
+  },
+  "endpoints": {
+    "Root": {
+      "total_requests": 232,
+      "successful_requests": 232,
+      "failed_requests": 0,
+      "success_rate": 100.0,
+      "avg_response_time_ms": 112.22461949079721,
+      "min_response_time_ms": 18.89822362763082,
+      "max_response_time_ms": 227.43993985436552,
+      "p90_response_time_ms": 190.86184802245327,
+      "p95_response_time_ms": 198.9837907320088,
+      "rps": 1.9333333333333333
+    },
+    "Login": {
+      "total_requests": 59,
+      "successful_requests": 56,
+      "failed_requests": 3,
+      "success_rate": 94.91525423728814,
+      "avg_response_time_ms": 640.5349210351562,
+      "min_response_time_ms": 156.6706468155966,
+      "max_response_time_ms": 1276.9330599591085,
+      "p90_response_time_ms": 991.1631274883428,
+      "p95_response_time_ms": 1097.3302978597621,
+      "rps": 0.49166666666666664
+    },
+    "Profile": {
+      "total_requests": 170,
+      "successful_requests": 164,
+      "failed_requests": 6,
+      "success_rate": 96.47058823529412,
+      "avg_response_time_ms": 313.5377085940108,
+      "min_response_time_ms": 73.26467134113472,
+      "max_response_time_ms": 831.5632329655092,
+      "p90_response_time_ms": 540.8127760186867,
+      "p95_response_time_ms": 593.7587918754102,
+      "rps": 1.4166666666666667
+    },
+    "List Projects": {
+      "total_requests": 109,
+      "successful_requests": 99,
+      "failed_requests": 10,
+      "success_rate": 90.82568807339449,
+      "avg_response_time_ms": 435.489816972809,
+      "min_response_time_ms": 106.68636944152101,
+      "max_response_time_ms": 941.0042412212066,
+      "p90_response_time_ms": 765.5664665143121,
+      "p95_response_time_ms": 872.2626927028444,
+      "rps": 0.9083333333333333
+    }
+  },
+  "raw_results": [
+    {
+      "timestamp": 1781763383.34106,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 553.4207045482945,
+      "success": true
+    },
+    {
+      "timestamp": 1781763383.3537223,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 79.2825799135075,
+      "success": true
+    },
+    {
+      "timestamp": 1781763383.3852217,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 50.15409626905544,
+      "success": true
+    },
+    {
+      "timestamp": 1781763383.7355702,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 148.08809399562728,
+      "success": true
+    },
+    {
+      "timestamp": 1781763383.8228002,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 698.331137227221,
+      "success": true
+    },
+    {
+      "timestamp": 1781763383.834405,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 220.76166195673375,
+      "success": true
+    },
+    {
+      "timestamp": 1781763383.9264116,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 99.38928358156525,
+      "success": true
+    },
+    {
+      "timestamp": 1781763383.9970226,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 349.2706240616602,
+      "success": true
+    },
+    {
+      "timestamp": 1781763384.0257475,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 136.58923834635223,
+      "success": true
+    },
+    {
+      "timestamp": 1781763384.0654616,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 73.9070093571635,
+      "success": true
+    },
+    {
+      "timestamp": 1781763384.0885146,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 239.52681684081438,
+      "success": true
+    },
+    {
+      "timestamp": 1781763384.508149,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 322.8677276970105,
+      "success": true
+    },
+    {
+      "timestamp": 1781763384.5091438,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 879.3869971930403,
+      "success": true
+    },
+    {
+      "timestamp": 1781763384.5523808,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 93.81897603238318,
+      "success": true
+    },
+    {
+      "timestamp": 1781763384.6702485,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 294.08846551200224,
+      "success": true
+    },
+    {
+      "timestamp": 1781763384.7191396,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 302.61772983259686,
+      "success": true
+    },
+    {
+      "timestamp": 1781763384.9392848,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 175.07428295309626,
+      "success": true
+    },
+    {
+      "timestamp": 1781763384.959692,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 278.72587602585287,
+      "success": true
+    },
+    {
+      "timestamp": 1781763384.9894478,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 470.6125976962255,
+      "success": true
+    },
+    {
+      "timestamp": 1781763385.066124,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 873.1185754408202,
+      "success": true
+    },
+    {
+      "timestamp": 1781763385.3490546,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 180.91908077542283,
+      "success": true
+    },
+    {
+      "timestamp": 1781763385.437802,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 537.0808617938528,
+      "success": true
+    },
+    {
+      "timestamp": 1781763385.5739667,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 472.9877355959827,
+      "success": true
+    },
+    {
+      "timestamp": 1781763385.580288,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 423.9170862748086,
+      "success": true
+    },
+    {
+      "timestamp": 1781763385.594635,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 674.2624277477554,
+      "success": true
+    },
+    {
+      "timestamp": 1781763386.2216897,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 49.33837738990045,
+      "success": true
+    },
+    {
+      "timestamp": 1781763386.2721295,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 69.46352312006258,
+      "success": true
+    },
+    {
+      "timestamp": 1781763386.4876456,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 974.3317276317315,
+      "success": true
+    },
+    {
+      "timestamp": 1781763386.5752294,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 297.95203772866364,
+      "success": true
+    },
+    {
+      "timestamp": 1781763386.6157866,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 174.1711392148502,
+      "success": true
+    },
+    {
+      "timestamp": 1781763386.6438496,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 348.3889176521061,
+      "success": true
+    },
+    {
+      "timestamp": 1781763386.9827778,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 296.5915694662991,
+      "success": true
+    },
+    {
+      "timestamp": 1781763387.2292495,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 205.8464519496208,
+      "success": true
+    },
+    {
+      "timestamp": 1781763387.291646,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 469.3019924884643,
+      "success": true
+    },
+    {
+      "timestamp": 1781763387.5907798,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 858.3068451289781,
+      "success": true
+    },
+    {
+      "timestamp": 1781763387.6683064,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 58.924913940193335,
+      "success": true
+    },
+    {
+      "timestamp": 1781763388.9467695,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 336.21539379260037,
+      "success": true
+    },
+    {
+      "timestamp": 1781763389.0062728,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 209.56048383526195,
+      "success": true
+    },
+    {
+      "timestamp": 1781763389.2879395,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 229.19980669938514,
+      "success": true
+    },
+    {
+      "timestamp": 1781763389.4646966,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 204.62620134740757,
+      "success": true
+    },
+    {
+      "timestamp": 1781763389.527245,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 170.52994021161146,
+      "success": true
+    },
+    {
+      "timestamp": 1781763389.7181475,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 89.07966713360085,
+      "success": true
+    },
+    {
+      "timestamp": 1781763389.7810755,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 164.26260313755523,
+      "success": true
+    },
+    {
+      "timestamp": 1781763390.016767,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 202.33371663708715,
+      "success": true
+    },
+    {
+      "timestamp": 1781763390.0475585,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 109.14288781324964,
+      "success": true
+    },
+    {
+      "timestamp": 1781763390.3121123,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 95.9081075768014,
+      "success": true
+    },
+    {
+      "timestamp": 1781763390.3998349,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 458.1104894794026,
+      "success": true
+    },
+    {
+      "timestamp": 1781763390.5585105,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 149.37598867449654,
+      "success": true
+    },
+    {
+      "timestamp": 1781763391.1588407,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 158.62149895840878,
+      "success": true
+    },
+    {
+      "timestamp": 1781763391.3386064,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 85.31469257592275,
+      "success": true
+    },
+    {
+      "timestamp": 1781763391.8304036,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 474.38468631363446,
+      "success": true
+    },
+    {
+      "timestamp": 1781763391.9583788,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 451.0440448669885,
+      "success": true
+    },
+    {
+      "timestamp": 1781763392.1981325,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 718.1415415678568,
+      "success": true
+    },
+    {
+      "timestamp": 1781763392.3181193,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 73.56412286944538,
+      "success": true
+    },
+    {
+      "timestamp": 1781763392.436099,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 414.1842061522268,
+      "success": true
+    },
+    {
+      "timestamp": 1781763392.510039,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 193.3079068044001,
+      "success": true
+    },
+    {
+      "timestamp": 1781763392.8198915,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 110.48986366511943,
+      "success": true
+    },
+    {
+      "timestamp": 1781763393.2097583,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 169.03143832356272,
+      "success": true
+    },
+    {
+      "timestamp": 1781763393.606468,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 745.41293999975,
+      "success": true
+    },
+    {
+      "timestamp": 1781763393.663628,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 50.03106307080045,
+      "success": true
+    },
+    {
+      "timestamp": 1781763393.8453822,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 534.1766947475049,
+      "success": true
+    },
+    {
+      "timestamp": 1781763393.8721004,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 72.3604302713448,
+      "success": true
+    },
+    {
+      "timestamp": 1781763394.1172266,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 835.7319300895479,
+      "success": true
+    },
+    {
+      "timestamp": 1781763394.3349912,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 103.43712956861486,
+      "success": true
+    },
+    {
+      "timestamp": 1781763394.7904627,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 397.22327459198726,
+      "success": true
+    },
+    {
+      "timestamp": 1781763394.9921823,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 83.23642158404975,
+      "success": true
+    },
+    {
+      "timestamp": 1781763395.0028133,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 933.6241662845481,
+      "success": true
+    },
+    {
+      "timestamp": 1781763395.1266632,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 56.39486098615132,
+      "success": true
+    },
+    {
+      "timestamp": 1781763395.6158633,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 129.41222807256224,
+      "success": true
+    },
+    {
+      "timestamp": 1781763395.838944,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 272.6823401462625,
+      "success": true
+    },
+    {
+      "timestamp": 1781763395.8416924,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 292.7520255824287,
+      "success": true
+    },
+    {
+      "timestamp": 1781763395.8670247,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 182.52262402260516,
+      "success": true
+    },
+    {
+      "timestamp": 1781763396.1743588,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 104.87348297495606,
+      "success": true
+    },
+    {
+      "timestamp": 1781763396.5330057,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 535.2104940338936,
+      "success": true
+    },
+    {
+      "timestamp": 1781763396.8637621,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 407.68888039441725,
+      "success": true
+    },
+    {
+      "timestamp": 1781763396.9810293,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 233.6621427193728,
+      "success": true
+    },
+    {
+      "timestamp": 1781763397.1124115,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 523.0930594633165,
+      "success": true
+    },
+    {
+      "timestamp": 1781763397.1329358,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 201.7091363514836,
+      "success": true
+    },
+    {
+      "timestamp": 1781763397.8000271,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 338.97260391898686,
+      "success": true
+    },
+    {
+      "timestamp": 1781763398.0436358,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 185.68547748663912,
+      "success": true
+    },
+    {
+      "timestamp": 1781763398.0947473,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 621.592251485641,
+      "success": true
+    },
+    {
+      "timestamp": 1781763398.2403157,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 154.14266732410292,
+      "success": true
+    },
+    {
+      "timestamp": 1781763398.4954658,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 288.468376778461,
+      "success": true
+    },
+    {
+      "timestamp": 1781763398.4996443,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 142.0127123166559,
+      "success": true
+    },
+    {
+      "timestamp": 1781763398.6001573,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 269.1106387985185,
+      "success": true
+    },
+    {
+      "timestamp": 1781763398.6853683,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 80.28449515391283,
+      "success": true
+    },
+    {
+      "timestamp": 1781763398.8456645,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 115.31880692290034,
+      "success": true
+    },
+    {
+      "timestamp": 1781763398.9958649,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 595.3711774366208,
+      "success": true
+    },
+    {
+      "timestamp": 1781763399.0286481,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 216.8463309341097,
+      "success": true
+    },
+    {
+      "timestamp": 1781763399.3560703,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 848.291699150626,
+      "success": true
+    },
+    {
+      "timestamp": 1781763400.1920645,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 520.0624430488124,
+      "success": true
+    },
+    {
+      "timestamp": 1781763400.2359855,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 233.3217841099953,
+      "success": true
+    },
+    {
+      "timestamp": 1781763400.4951968,
+      "endpoint": "List Projects",
+      "status_code": 503,
+      "latency_ms": 267.92485054400345,
+      "success": false
+    },
+    {
+      "timestamp": 1781763401.0500865,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 522.0186895259237,
+      "success": true
+    },
+    {
+      "timestamp": 1781763401.1060698,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 114.29698879445635,
+      "success": true
+    },
+    {
+      "timestamp": 1781763401.5736158,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 429.95980790911767,
+      "success": true
+    },
+    {
+      "timestamp": 1781763401.5921175,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 374.48087921943693,
+      "success": true
+    },
+    {
+      "timestamp": 1781763401.956536,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 209.1933894720197,
+      "success": true
+    },
+    {
+      "timestamp": 1781763402.0731306,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 849.094115888038,
+      "success": true
+    },
+    {
+      "timestamp": 1781763402.258216,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 171.83902815290062,
+      "success": true
+    },
+    {
+      "timestamp": 1781763402.3502283,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 92.3270977469362,
+      "success": true
+    },
+    {
+      "timestamp": 1781763402.3906736,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 75.9091393286165,
+      "success": true
+    },
+    {
+      "timestamp": 1781763402.5336525,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 183.83620035893298,
+      "success": true
+    },
+    {
+      "timestamp": 1781763402.6405747,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 665.126869982984,
+      "success": true
+    },
+    {
+      "timestamp": 1781763402.667952,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 339.712843314813,
+      "success": true
+    },
+    {
+      "timestamp": 1781763402.7194974,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 215.35109399828323,
+      "success": true
+    },
+    {
+      "timestamp": 1781763402.7665305,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 588.3573103317212,
+      "success": true
+    },
+    {
+      "timestamp": 1781763402.9711664,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 241.25351692666254,
+      "success": true
+    },
+    {
+      "timestamp": 1781763403.0664458,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 269.82486683457773,
+      "success": true
+    },
+    {
+      "timestamp": 1781763403.0856776,
+      "endpoint": "Profile",
+      "status_code": 502,
+      "latency_ms": 162.98882396385494,
+      "success": false
+    },
+    {
+      "timestamp": 1781763403.535805,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 143.74467318716395,
+      "success": true
+    },
+    {
+      "timestamp": 1781763403.6161752,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 146.53206820768656,
+      "success": true
+    },
+    {
+      "timestamp": 1781763403.6717975,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 344.7650856525906,
+      "success": true
+    },
+    {
+      "timestamp": 1781763403.7748306,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 370.5092998217242,
+      "success": true
+    },
+    {
+      "timestamp": 1781763404.2171404,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 86.15458801335069,
+      "success": true
+    },
+    {
+      "timestamp": 1781763404.2728853,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 52.28221815142638,
+      "success": true
+    },
+    {
+      "timestamp": 1781763404.330565,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 142.61159303593848,
+      "success": true
+    },
+    {
+      "timestamp": 1781763404.791397,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 668.064306671336,
+      "success": true
+    },
+    {
+      "timestamp": 1781763404.8849852,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 300.66988665265535,
+      "success": true
+    },
+    {
+      "timestamp": 1781763404.93047,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 87.22474750639097,
+      "success": true
+    },
+    {
+      "timestamp": 1781763405.059691,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 491.12041772411965,
+      "success": true
+    },
+    {
+      "timestamp": 1781763405.1191065,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 196.88536963047375,
+      "success": true
+    },
+    {
+      "timestamp": 1781763405.332692,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 285.24124096748443,
+      "success": true
+    },
+    {
+      "timestamp": 1781763405.5245883,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 408.4225144670859,
+      "success": true
+    },
+    {
+      "timestamp": 1781763405.5583525,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 103.34881005627017,
+      "success": true
+    },
+    {
+      "timestamp": 1781763405.6035585,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 75.35106817972637,
+      "success": true
+    },
+    {
+      "timestamp": 1781763405.6181903,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 224.83599829878614,
+      "success": true
+    },
+    {
+      "timestamp": 1781763405.6898963,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 39.78531172903817,
+      "success": true
+    },
+    {
+      "timestamp": 1781763405.892661,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 267.04376159943934,
+      "success": true
+    },
+    {
+      "timestamp": 1781763406.3188446,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 254.92960371386152,
+      "success": true
+    },
+    {
+      "timestamp": 1781763406.3649027,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 160.00263082046516,
+      "success": true
+    },
+    {
+      "timestamp": 1781763406.5770416,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 511.7967464901667,
+      "success": true
+    },
+    {
+      "timestamp": 1781763407.307086,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 162.78366752092234,
+      "success": true
+    },
+    {
+      "timestamp": 1781763407.543508,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 154.38961195584903,
+      "success": true
+    },
+    {
+      "timestamp": 1781763407.5927339,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 309.03466264274357,
+      "success": true
+    },
+    {
+      "timestamp": 1781763407.611489,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 94.22524864288411,
+      "success": true
+    },
+    {
+      "timestamp": 1781763407.9129748,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 299.6565503382087,
+      "success": true
+    },
+    {
+      "timestamp": 1781763408.0155628,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 96.95707208165908,
+      "success": true
+    },
+    {
+      "timestamp": 1781763408.2458158,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 494.9626310505847,
+      "success": true
+    },
+    {
+      "timestamp": 1781763408.2969165,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 472.454812006416,
+      "success": true
+    },
+    {
+      "timestamp": 1781763408.5475585,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 168.80018346425948,
+      "success": true
+    },
+    {
+      "timestamp": 1781763408.5989103,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 71.3764168395621,
+      "success": true
+    },
+    {
+      "timestamp": 1781763408.608915,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 163.7011949852528,
+      "success": true
+    },
+    {
+      "timestamp": 1781763408.662314,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 437.8155412821802,
+      "success": true
+    },
+    {
+      "timestamp": 1781763408.693951,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 150.83240184074953,
+      "success": true
+    },
+    {
+      "timestamp": 1781763408.747855,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 354.8112517552587,
+      "success": true
+    },
+    {
+      "timestamp": 1781763408.9088023,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 141.7932003202896,
+      "success": true
+    },
+    {
+      "timestamp": 1781763408.9347782,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 578.5986496247826,
+      "success": true
+    },
+    {
+      "timestamp": 1781763409.026097,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 95.59147474715209,
+      "success": true
+    },
+    {
+      "timestamp": 1781763409.2118194,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 138.76943202174186,
+      "success": true
+    },
+    {
+      "timestamp": 1781763409.2385116,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 398.33805315743456,
+      "success": true
+    },
+    {
+      "timestamp": 1781763409.2475111,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 152.97676067248835,
+      "success": true
+    },
+    {
+      "timestamp": 1781763409.4303565,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 397.2087893973355,
+      "success": true
+    },
+    {
+      "timestamp": 1781763409.789058,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 475.6073594541757,
+      "success": true
+    },
+    {
+      "timestamp": 1781763409.9490786,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 259.0230090237915,
+      "success": true
+    },
+    {
+      "timestamp": 1781763410.181795,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 1008.0299974829165,
+      "success": true
+    },
+    {
+      "timestamp": 1781763410.2653651,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 279.4309587579094,
+      "success": true
+    },
+    {
+      "timestamp": 1781763410.7812095,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 18.89822362763082,
+      "success": true
+    },
+    {
+      "timestamp": 1781763410.9939363,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 350.6962571048633,
+      "success": true
+    },
+    {
+      "timestamp": 1781763410.9960253,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 585.0053071503688,
+      "success": true
+    },
+    {
+      "timestamp": 1781763411.2004294,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 505.7958853848967,
+      "success": true
+    },
+    {
+      "timestamp": 1781763411.543316,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 215.49719070637832,
+      "success": true
+    },
+    {
+      "timestamp": 1781763411.586899,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 313.85829049110407,
+      "success": true
+    },
+    {
+      "timestamp": 1781763412.2377286,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 96.20536902637076,
+      "success": true
+    },
+    {
+      "timestamp": 1781763412.3065767,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 198.9837907320088,
+      "success": true
+    },
+    {
+      "timestamp": 1781763412.6607602,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 730.2493574631751,
+      "success": true
+    },
+    {
+      "timestamp": 1781763413.0287933,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 69.89777687427527,
+      "success": true
+    },
+    {
+      "timestamp": 1781763413.1152613,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 325.03254138125226,
+      "success": true
+    },
+    {
+      "timestamp": 1781763413.291559,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 145.48444134701433,
+      "success": true
+    },
+    {
+      "timestamp": 1781763413.4474232,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 94.0429599535201,
+      "success": true
+    },
+    {
+      "timestamp": 1781763413.6702726,
+      "endpoint": "List Projects",
+      "status_code": 503,
+      "latency_ms": 106.68636944152101,
+      "success": false
+    },
+    {
+      "timestamp": 1781763413.9149387,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 87.98384759516179,
+      "success": true
+    },
+    {
+      "timestamp": 1781763414.268902,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 108.1029157344658,
+      "success": true
+    },
+    {
+      "timestamp": 1781763414.5299094,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 224.05109626423564,
+      "success": true
+    },
+    {
+      "timestamp": 1781763415.036104,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 540.8127760186867,
+      "success": true
+    },
+    {
+      "timestamp": 1781763415.8325026,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 179.58537448113407,
+      "success": true
+    },
+    {
+      "timestamp": 1781763416.4677315,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 569.3145731082935,
+      "success": true
+    },
+    {
+      "timestamp": 1781763416.761864,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 105.74056704987734,
+      "success": true
+    },
+    {
+      "timestamp": 1781763417.400655,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 209.43906239065302,
+      "success": true
+    },
+    {
+      "timestamp": 1781763417.6559393,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 57.101686662230556,
+      "success": true
+    },
+    {
+      "timestamp": 1781763417.6700206,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 176.9065205956789,
+      "success": true
+    },
+    {
+      "timestamp": 1781763417.7991974,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 653.0513595834208,
+      "success": true
+    },
+    {
+      "timestamp": 1781763418.656009,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 485.9166564465901,
+      "success": true
+    },
+    {
+      "timestamp": 1781763418.7149632,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 36.317800332305964,
+      "success": true
+    },
+    {
+      "timestamp": 1781763418.7699118,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 110.50521440738947,
+      "success": true
+    },
+    {
+      "timestamp": 1781763419.1251745,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 765.5664665143121,
+      "success": true
+    },
+    {
+      "timestamp": 1781763420.0393066,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 58.03469613744102,
+      "success": true
+    },
+    {
+      "timestamp": 1781763420.098779,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 225.97037917148634,
+      "success": true
+    },
+    {
+      "timestamp": 1781763420.1521578,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 88.08787920399658,
+      "success": true
+    },
+    {
+      "timestamp": 1781763420.3292654,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 135.49015599301484,
+      "success": true
+    },
+    {
+      "timestamp": 1781763420.333867,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 49.73602234490479,
+      "success": true
+    },
+    {
+      "timestamp": 1781763420.3833737,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 108.3736208722998,
+      "success": true
+    },
+    {
+      "timestamp": 1781763420.5868857,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 236.83124322456808,
+      "success": true
+    },
+    {
+      "timestamp": 1781763420.643422,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 118.24260108955178,
+      "success": true
+    },
+    {
+      "timestamp": 1781763420.7793841,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 62.2476670871283,
+      "success": true
+    },
+    {
+      "timestamp": 1781763420.7888849,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 146.18852270464208,
+      "success": true
+    },
+    {
+      "timestamp": 1781763421.0718744,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 158.69683213565813,
+      "success": true
+    },
+    {
+      "timestamp": 1781763421.2236824,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 155.8546413960493,
+      "success": true
+    },
+    {
+      "timestamp": 1781763421.6171281,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 127.76080284284531,
+      "success": true
+    },
+    {
+      "timestamp": 1781763421.6421118,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 117.64806218706534,
+      "success": true
+    },
+    {
+      "timestamp": 1781763422.306047,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 103.19176808014072,
+      "success": true
+    },
+    {
+      "timestamp": 1781763422.4610574,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 386.2722717994651,
+      "success": true
+    },
+    {
+      "timestamp": 1781763422.561022,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 342.6621607003289,
+      "success": true
+    },
+    {
+      "timestamp": 1781763422.9878395,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 78.10578167969012,
+      "success": true
+    },
+    {
+      "timestamp": 1781763423.0131128,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 1276.9330599591085,
+      "success": true
+    },
+    {
+      "timestamp": 1781763423.2974315,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 120.79556262854697,
+      "success": true
+    },
+    {
+      "timestamp": 1781763423.329026,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 64.11821341306279,
+      "success": true
+    },
+    {
+      "timestamp": 1781763423.3812513,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 586.8630575676552,
+      "success": true
+    },
+    {
+      "timestamp": 1781763423.5410345,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 77.16759807430549,
+      "success": true
+    },
+    {
+      "timestamp": 1781763423.5554075,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 87.31947968321009,
+      "success": true
+    },
+    {
+      "timestamp": 1781763423.7149465,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 88.37633865469638,
+      "success": true
+    },
+    {
+      "timestamp": 1781763423.9338531,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 83.08334434648522,
+      "success": true
+    },
+    {
+      "timestamp": 1781763424.4766355,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 349.0531845016592,
+      "success": true
+    },
+    {
+      "timestamp": 1781763424.6029503,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 172.07096732489003,
+      "success": true
+    },
+    {
+      "timestamp": 1781763424.995629,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 195.96034170578926,
+      "success": true
+    },
+    {
+      "timestamp": 1781763425.9650912,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 216.75899424659667,
+      "success": true
+    },
+    {
+      "timestamp": 1781763426.1634512,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 187.7446432976458,
+      "success": true
+    },
+    {
+      "timestamp": 1781763426.351252,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 174.02461195379175,
+      "success": true
+    },
+    {
+      "timestamp": 1781763426.8300116,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 227.43993985436552,
+      "success": true
+    },
+    {
+      "timestamp": 1781763427.4278343,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 653.8123533653063,
+      "success": true
+    },
+    {
+      "timestamp": 1781763427.6907094,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 132.17321195156575,
+      "success": true
+    },
+    {
+      "timestamp": 1781763428.0947654,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 343.0452352279226,
+      "success": true
+    },
+    {
+      "timestamp": 1781763428.0947719,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 513.6665069719229,
+      "success": true
+    },
+    {
+      "timestamp": 1781763428.1004765,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 856.7378463364646,
+      "success": true
+    },
+    {
+      "timestamp": 1781763428.1092134,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 308.303916700444,
+      "success": true
+    },
+    {
+      "timestamp": 1781763428.2596147,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 279.76227436886865,
+      "success": true
+    },
+    {
+      "timestamp": 1781763428.7480443,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 979.3822856252013,
+      "success": true
+    },
+    {
+      "timestamp": 1781763428.9652636,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 255.85065389180124,
+      "success": true
+    },
+    {
+      "timestamp": 1781763429.0688992,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 49.466802504756735,
+      "success": true
+    },
+    {
+      "timestamp": 1781763429.5503635,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 74.22541324698915,
+      "success": true
+    },
+    {
+      "timestamp": 1781763430.3220541,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 381.80413845883294,
+      "success": true
+    },
+    {
+      "timestamp": 1781763430.3525634,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 109.38596742659198,
+      "success": true
+    },
+    {
+      "timestamp": 1781763430.5864513,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 222.41205098204253,
+      "success": true
+    },
+    {
+      "timestamp": 1781763430.925575,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 381.9861275473321,
+      "success": true
+    },
+    {
+      "timestamp": 1781763431.3257573,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 82.35952531537035,
+      "success": true
+    },
+    {
+      "timestamp": 1781763431.4319172,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 374.862514119772,
+      "success": true
+    },
+    {
+      "timestamp": 1781763431.457006,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 627.8765003861723,
+      "success": true
+    },
+    {
+      "timestamp": 1781763431.477488,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 182.23274760985288,
+      "success": true
+    },
+    {
+      "timestamp": 1781763431.8520315,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 376.8924993216975,
+      "success": true
+    },
+    {
+      "timestamp": 1781763432.0803869,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 404.0867426337177,
+      "success": true
+    },
+    {
+      "timestamp": 1781763432.286957,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 275.99099856047013,
+      "success": true
+    },
+    {
+      "timestamp": 1781763432.5048609,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 168.46972197824914,
+      "success": true
+    },
+    {
+      "timestamp": 1781763432.609919,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 49.58850295145306,
+      "success": true
+    },
+    {
+      "timestamp": 1781763433.2934806,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 443.3521303313373,
+      "success": true
+    },
+    {
+      "timestamp": 1781763433.8309283,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 209.47356517970002,
+      "success": true
+    },
+    {
+      "timestamp": 1781763433.916665,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 92.29703290447793,
+      "success": true
+    },
+    {
+      "timestamp": 1781763434.046367,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 872.2626927028444,
+      "success": true
+    },
+    {
+      "timestamp": 1781763434.166339,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 74.96147075555633,
+      "success": true
+    },
+    {
+      "timestamp": 1781763434.2957833,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 419.23691718436146,
+      "success": true
+    },
+    {
+      "timestamp": 1781763434.5230374,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 223.39585206196392,
+      "success": true
+    },
+    {
+      "timestamp": 1781763434.6062477,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 24.308459815958734,
+      "success": true
+    },
+    {
+      "timestamp": 1781763434.7532384,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 939.5433769663555,
+      "success": true
+    },
+    {
+      "timestamp": 1781763434.8027294,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 127.52377792629895,
+      "success": true
+    },
+    {
+      "timestamp": 1781763435.2338746,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 737.4800605491585,
+      "success": true
+    },
+    {
+      "timestamp": 1781763435.2666938,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 837.1642454837086,
+      "success": true
+    },
+    {
+      "timestamp": 1781763435.2916536,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 763.7500799357707,
+      "success": true
+    },
+    {
+      "timestamp": 1781763435.5892699,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 239.23113760212897,
+      "success": true
+    },
+    {
+      "timestamp": 1781763435.7625349,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 193.30295528886575,
+      "success": true
+    },
+    {
+      "timestamp": 1781763436.239578,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 154.27872572091064,
+      "success": true
+    },
+    {
+      "timestamp": 1781763436.315392,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 411.2362936896178,
+      "success": true
+    },
+    {
+      "timestamp": 1781763436.804522,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 260.5010800772828,
+      "success": true
+    },
+    {
+      "timestamp": 1781763436.9329987,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 345.29481470208634,
+      "success": true
+    },
+    {
+      "timestamp": 1781763437.2115211,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 349.31037243133954,
+      "success": true
+    },
+    {
+      "timestamp": 1781763437.2276232,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 168.93892517234013,
+      "success": true
+    },
+    {
+      "timestamp": 1781763437.851605,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 87.69892133067327,
+      "success": true
+    },
+    {
+      "timestamp": 1781763438.0069902,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 991.1631274883428,
+      "success": true
+    },
+    {
+      "timestamp": 1781763438.5078197,
+      "endpoint": "Profile",
+      "status_code": 502,
+      "latency_ms": 442.11840469834203,
+      "success": false
+    },
+    {
+      "timestamp": 1781763438.7133722,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 245.43128696277853,
+      "success": true
+    },
+    {
+      "timestamp": 1781763439.4831147,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 147.6251605560759,
+      "success": true
+    },
+    {
+      "timestamp": 1781763439.6260507,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 179.0776692157987,
+      "success": true
+    },
+    {
+      "timestamp": 1781763439.864598,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 204.20985688570497,
+      "success": true
+    },
+    {
+      "timestamp": 1781763439.8912232,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 190.86184802245327,
+      "success": true
+    },
+    {
+      "timestamp": 1781763440.0470216,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 99.91201662690199,
+      "success": true
+    },
+    {
+      "timestamp": 1781763440.1574898,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 567.1877196837871,
+      "success": true
+    },
+    {
+      "timestamp": 1781763440.2362742,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 117.29981534424422,
+      "success": true
+    },
+    {
+      "timestamp": 1781763440.732722,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 483.32287339648644,
+      "success": true
+    },
+    {
+      "timestamp": 1781763440.7491465,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 503.8623014803802,
+      "success": true
+    },
+    {
+      "timestamp": 1781763440.8011158,
+      "endpoint": "List Projects",
+      "status_code": 500,
+      "latency_ms": 192.58327462278584,
+      "success": false
+    },
+    {
+      "timestamp": 1781763440.8783283,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 84.40739087811484,
+      "success": true
+    },
+    {
+      "timestamp": 1781763441.943001,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 194.0713020484534,
+      "success": true
+    },
+    {
+      "timestamp": 1781763442.1497748,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 220.09676127047487,
+      "success": true
+    },
+    {
+      "timestamp": 1781763442.2133164,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 296.1148341682821,
+      "success": true
+    },
+    {
+      "timestamp": 1781763442.2741766,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 82.43881337930544,
+      "success": true
+    },
+    {
+      "timestamp": 1781763442.3300288,
+      "endpoint": "Profile",
+      "status_code": 500,
+      "latency_ms": 156.21165942341503,
+      "success": false
+    },
+    {
+      "timestamp": 1781763442.846141,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 974.4360357343566,
+      "success": true
+    },
+    {
+      "timestamp": 1781763442.8774683,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 622.6167431453005,
+      "success": true
+    },
+    {
+      "timestamp": 1781763442.9827738,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 181.21384472093507,
+      "success": true
+    },
+    {
+      "timestamp": 1781763443.2631269,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 133.25964874723877,
+      "success": true
+    },
+    {
+      "timestamp": 1781763443.523555,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 198.19473702544934,
+      "success": true
+    },
+    {
+      "timestamp": 1781763443.6498573,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 949.6370493376854,
+      "success": true
+    },
+    {
+      "timestamp": 1781763443.6606064,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 159.35565248359,
+      "success": true
+    },
+    {
+      "timestamp": 1781763444.190682,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 154.86667352632327,
+      "success": true
+    },
+    {
+      "timestamp": 1781763444.2776234,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 529.366379402805,
+      "success": true
+    },
+    {
+      "timestamp": 1781763444.3464496,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 38.72813006185373,
+      "success": true
+    },
+    {
+      "timestamp": 1781763444.731106,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 427.39516304875883,
+      "success": true
+    },
+    {
+      "timestamp": 1781763445.098129,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 82.97155624549437,
+      "success": true
+    },
+    {
+      "timestamp": 1781763445.1372304,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 893.1799225188621,
+      "success": true
+    },
+    {
+      "timestamp": 1781763445.4202576,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 893.504082299062,
+      "success": true
+    },
+    {
+      "timestamp": 1781763445.6614509,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 39.38122332149416,
+      "success": true
+    },
+    {
+      "timestamp": 1781763445.7420797,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 214.83733075777548,
+      "success": true
+    },
+    {
+      "timestamp": 1781763445.9112697,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 109.4466542574437,
+      "success": true
+    },
+    {
+      "timestamp": 1781763446.417454,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 1003.607497527562,
+      "success": true
+    },
+    {
+      "timestamp": 1781763446.451066,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 258.8780995834728,
+      "success": true
+    },
+    {
+      "timestamp": 1781763446.7236407,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 133.23445611975552,
+      "success": true
+    },
+    {
+      "timestamp": 1781763447.31912,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 121.84068005179563,
+      "success": true
+    },
+    {
+      "timestamp": 1781763447.7821739,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 163.140796966222,
+      "success": true
+    },
+    {
+      "timestamp": 1781763447.9599454,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 636.0319675596478,
+      "success": true
+    },
+    {
+      "timestamp": 1781763448.0896904,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 101.59958106681577,
+      "success": true
+    },
+    {
+      "timestamp": 1781763448.1089923,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 261.98940677388384,
+      "success": true
+    },
+    {
+      "timestamp": 1781763448.6343155,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 264.5764843616559,
+      "success": true
+    },
+    {
+      "timestamp": 1781763448.720318,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 69.00587197694746,
+      "success": true
+    },
+    {
+      "timestamp": 1781763448.7641387,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 312.76719016697155,
+      "success": true
+    },
+    {
+      "timestamp": 1781763449.1552963,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 43.919135533665695,
+      "success": true
+    },
+    {
+      "timestamp": 1781763449.2799392,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 549.5186397812627,
+      "success": true
+    },
+    {
+      "timestamp": 1781763449.4231827,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 553.34780965393,
+      "success": true
+    },
+    {
+      "timestamp": 1781763449.7442641,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 234.46005750283587,
+      "success": true
+    },
+    {
+      "timestamp": 1781763449.888469,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 104.41207689409717,
+      "success": true
+    },
+    {
+      "timestamp": 1781763450.0555801,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 872.7446200902872,
+      "success": true
+    },
+    {
+      "timestamp": 1781763450.0956604,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 127.0564753641674,
+      "success": true
+    },
+    {
+      "timestamp": 1781763450.10138,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 34.1164960489876,
+      "success": true
+    },
+    {
+      "timestamp": 1781763450.616997,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 66.77317471184791,
+      "success": true
+    },
+    {
+      "timestamp": 1781763450.9498441,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 39.13378332882746,
+      "success": true
+    },
+    {
+      "timestamp": 1781763451.027684,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 1232.5793951748992,
+      "success": true
+    },
+    {
+      "timestamp": 1781763451.156393,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 291.42889615929704,
+      "success": true
+    },
+    {
+      "timestamp": 1781763451.5821555,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 32.79546668153603,
+      "success": true
+    },
+    {
+      "timestamp": 1781763451.5891235,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 843.2682886258706,
+      "success": true
+    },
+    {
+      "timestamp": 1781763451.611261,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 708.1154226859405,
+      "success": true
+    },
+    {
+      "timestamp": 1781763451.749067,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 78.37787077965822,
+      "success": true
+    },
+    {
+      "timestamp": 1781763451.7988799,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 356.3954107581525,
+      "success": true
+    },
+    {
+      "timestamp": 1781763451.855177,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 115.68545607322223,
+      "success": true
+    },
+    {
+      "timestamp": 1781763452.167265,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 177.938067731126,
+      "success": true
+    },
+    {
+      "timestamp": 1781763452.1711068,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 188.5366601002513,
+      "success": true
+    },
+    {
+      "timestamp": 1781763453.4846466,
+      "endpoint": "Profile",
+      "status_code": 502,
+      "latency_ms": 421.407909515093,
+      "success": false
+    },
+    {
+      "timestamp": 1781763453.724766,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 45.36057271004095,
+      "success": true
+    },
+    {
+      "timestamp": 1781763453.8488972,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 166.411936412717,
+      "success": true
+    },
+    {
+      "timestamp": 1781763454.3033826,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 266.99047998142726,
+      "success": true
+    },
+    {
+      "timestamp": 1781763454.511371,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 100.69665718105605,
+      "success": true
+    },
+    {
+      "timestamp": 1781763454.5439925,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 231.64772974655443,
+      "success": true
+    },
+    {
+      "timestamp": 1781763454.8711612,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 66.37724076060519,
+      "success": true
+    },
+    {
+      "timestamp": 1781763455.2899354,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 195.33176256799103,
+      "success": true
+    },
+    {
+      "timestamp": 1781763455.3021102,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 521.4159662425315,
+      "success": true
+    },
+    {
+      "timestamp": 1781763455.349063,
+      "endpoint": "List Projects",
+      "status_code": 502,
+      "latency_ms": 870.4629913427532,
+      "success": false
+    },
+    {
+      "timestamp": 1781763455.3532343,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 85.61603429474877,
+      "success": true
+    },
+    {
+      "timestamp": 1781763455.4047072,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 166.32605922065562,
+      "success": true
+    },
+    {
+      "timestamp": 1781763455.634254,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 502.5003725345513,
+      "success": true
+    },
+    {
+      "timestamp": 1781763456.0103118,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 234.76825067404434,
+      "success": true
+    },
+    {
+      "timestamp": 1781763456.1134303,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 172.50171168327574,
+      "success": true
+    },
+    {
+      "timestamp": 1781763456.8544028,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 155.28579091993532,
+      "success": true
+    },
+    {
+      "timestamp": 1781763457.0115867,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 230.4440336090007,
+      "success": true
+    },
+    {
+      "timestamp": 1781763457.5868511,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 95.5367285871383,
+      "success": true
+    },
+    {
+      "timestamp": 1781763457.6418278,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 473.16940945446095,
+      "success": true
+    },
+    {
+      "timestamp": 1781763457.9911726,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 559.5998351332939,
+      "success": true
+    },
+    {
+      "timestamp": 1781763458.18141,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 259.3662328716596,
+      "success": true
+    },
+    {
+      "timestamp": 1781763458.4765158,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 251.34171474827406,
+      "success": true
+    },
+    {
+      "timestamp": 1781763458.7586305,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 73.20444993787504,
+      "success": true
+    },
+    {
+      "timestamp": 1781763458.7970164,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 127.54498753708079,
+      "success": true
+    },
+    {
+      "timestamp": 1781763458.8107169,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 156.6706468155966,
+      "success": true
+    },
+    {
+      "timestamp": 1781763459.156773,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 109.28127073200898,
+      "success": true
+    },
+    {
+      "timestamp": 1781763459.3796775,
+      "endpoint": "Login",
+      "status_code": 503,
+      "latency_ms": 551.3518287886363,
+      "success": false
+    },
+    {
+      "timestamp": 1781763459.6569858,
+      "endpoint": "Login",
+      "status_code": 500,
+      "latency_ms": 728.8325939502813,
+      "success": false
+    },
+    {
+      "timestamp": 1781763459.6901412,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 803.2950414269068,
+      "success": true
+    },
+    {
+      "timestamp": 1781763459.8278584,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 562.6430580691994,
+      "success": true
+    },
+    {
+      "timestamp": 1781763459.8685863,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 364.7480216684103,
+      "success": true
+    },
+    {
+      "timestamp": 1781763459.9440863,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 182.70501215139316,
+      "success": true
+    },
+    {
+      "timestamp": 1781763460.2221596,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 213.4447838556425,
+      "success": true
+    },
+    {
+      "timestamp": 1781763460.4230623,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 89.97228194360537,
+      "success": true
+    },
+    {
+      "timestamp": 1781763460.5022535,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 131.43590228035907,
+      "success": true
+    },
+    {
+      "timestamp": 1781763460.558077,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 61.83163983193759,
+      "success": true
+    },
+    {
+      "timestamp": 1781763460.6469646,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 137.14595244846578,
+      "success": true
+    },
+    {
+      "timestamp": 1781763460.6721501,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 53.022998132369096,
+      "success": true
+    },
+    {
+      "timestamp": 1781763460.8539045,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 50.225482579213306,
+      "success": true
+    },
+    {
+      "timestamp": 1781763461.220054,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 478.0059126012054,
+      "success": true
+    },
+    {
+      "timestamp": 1781763461.7282162,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 120.01021502029242,
+      "success": true
+    },
+    {
+      "timestamp": 1781763462.1182652,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 601.5366510019528,
+      "success": true
+    },
+    {
+      "timestamp": 1781763462.8856277,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 345.4183810647265,
+      "success": true
+    },
+    {
+      "timestamp": 1781763463.064799,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 99.6107993720716,
+      "success": true
+    },
+    {
+      "timestamp": 1781763463.0723517,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 194.09300658079587,
+      "success": true
+    },
+    {
+      "timestamp": 1781763463.286848,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 473.5378854203982,
+      "success": true
+    },
+    {
+      "timestamp": 1781763463.868382,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 329.6692516246146,
+      "success": true
+    },
+    {
+      "timestamp": 1781763464.224316,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 269.3997735613956,
+      "success": true
+    },
+    {
+      "timestamp": 1781763465.126355,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 270.16919822940923,
+      "success": true
+    },
+    {
+      "timestamp": 1781763465.343468,
+      "endpoint": "List Projects",
+      "status_code": 502,
+      "latency_ms": 149.25974261679613,
+      "success": false
+    },
+    {
+      "timestamp": 1781763465.5104265,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 70.36965297119269,
+      "success": true
+    },
+    {
+      "timestamp": 1781763465.5406556,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 120.47562115278427,
+      "success": true
+    },
+    {
+      "timestamp": 1781763465.621371,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 87.453455266194,
+      "success": true
+    },
+    {
+      "timestamp": 1781763465.9005094,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 406.34471255136015,
+      "success": true
+    },
+    {
+      "timestamp": 1781763465.914334,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 302.56557201488397,
+      "success": true
+    },
+    {
+      "timestamp": 1781763465.9433281,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 195.76120825593492,
+      "success": true
+    },
+    {
+      "timestamp": 1781763466.1103008,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 55.63166609774364,
+      "success": true
+    },
+    {
+      "timestamp": 1781763466.2461762,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 196.4098548598439,
+      "success": true
+    },
+    {
+      "timestamp": 1781763466.6896152,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 28.20975216621177,
+      "success": true
+    },
+    {
+      "timestamp": 1781763466.8530004,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 155.39747260309798,
+      "success": true
+    },
+    {
+      "timestamp": 1781763466.9544387,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 438.27870363722496,
+      "success": true
+    },
+    {
+      "timestamp": 1781763467.0003395,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 127.18757210258234,
+      "success": true
+    },
+    {
+      "timestamp": 1781763467.1423175,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 197.0905721513725,
+      "success": true
+    },
+    {
+      "timestamp": 1781763467.8012104,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 29.83759927055649,
+      "success": true
+    },
+    {
+      "timestamp": 1781763468.1028981,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 119.08720695304184,
+      "success": true
+    },
+    {
+      "timestamp": 1781763468.1084628,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 82.43335520600449,
+      "success": true
+    },
+    {
+      "timestamp": 1781763468.248384,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 287.60311912155197,
+      "success": true
+    },
+    {
+      "timestamp": 1781763468.7665255,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 20.787209641749026,
+      "success": true
+    },
+    {
+      "timestamp": 1781763468.772171,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 295.03181295531084,
+      "success": true
+    },
+    {
+      "timestamp": 1781763469.2019856,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 104.20583198174128,
+      "success": true
+    },
+    {
+      "timestamp": 1781763469.6131697,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 452.98694712617294,
+      "success": true
+    },
+    {
+      "timestamp": 1781763469.684149,
+      "endpoint": "List Projects",
+      "status_code": 500,
+      "latency_ms": 434.4514273246278,
+      "success": false
+    },
+    {
+      "timestamp": 1781763470.276094,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 616.0424344496281,
+      "success": true
+    },
+    {
+      "timestamp": 1781763470.331801,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 73.26467134113472,
+      "success": true
+    },
+    {
+      "timestamp": 1781763470.4117649,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 75.46062455154917,
+      "success": true
+    },
+    {
+      "timestamp": 1781763470.5497174,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 233.80738343060978,
+      "success": true
+    },
+    {
+      "timestamp": 1781763470.8156064,
+      "endpoint": "List Projects",
+      "status_code": 503,
+      "latency_ms": 642.436447021772,
+      "success": false
+    },
+    {
+      "timestamp": 1781763471.1050823,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 77.23736888600942,
+      "success": true
+    },
+    {
+      "timestamp": 1781763471.111733,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 191.00491913195998,
+      "success": true
+    },
+    {
+      "timestamp": 1781763471.3484557,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 64.27793482591726,
+      "success": true
+    },
+    {
+      "timestamp": 1781763471.3850262,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 679.3536929472548,
+      "success": true
+    },
+    {
+      "timestamp": 1781763471.78391,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 794.8806034131278,
+      "success": true
+    },
+    {
+      "timestamp": 1781763471.9881022,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 426.77911473112147,
+      "success": true
+    },
+    {
+      "timestamp": 1781763472.0373676,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 35.797717936888425,
+      "success": true
+    },
+    {
+      "timestamp": 1781763472.5300162,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 600.0872878717416,
+      "success": true
+    },
+    {
+      "timestamp": 1781763472.635725,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 609.0289677118666,
+      "success": true
+    },
+    {
+      "timestamp": 1781763473.3147862,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 306.51590863597113,
+      "success": true
+    },
+    {
+      "timestamp": 1781763473.3373559,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 149.66691852630447,
+      "success": true
+    },
+    {
+      "timestamp": 1781763473.549601,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 252.95106616388966,
+      "success": true
+    },
+    {
+      "timestamp": 1781763474.0414436,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 93.29933975015928,
+      "success": true
+    },
+    {
+      "timestamp": 1781763474.1045098,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 116.98752831298626,
+      "success": true
+    },
+    {
+      "timestamp": 1781763474.7469058,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 54.480215554206524,
+      "success": true
+    },
+    {
+      "timestamp": 1781763474.9853053,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 238.8101239334306,
+      "success": true
+    },
+    {
+      "timestamp": 1781763475.1091104,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 525.6145941744851,
+      "success": true
+    },
+    {
+      "timestamp": 1781763475.1590989,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 235.6987964229445,
+      "success": true
+    },
+    {
+      "timestamp": 1781763475.165674,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 831.7790027853235,
+      "success": true
+    },
+    {
+      "timestamp": 1781763475.8886924,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 417.2733668279085,
+      "success": true
+    },
+    {
+      "timestamp": 1781763476.0601382,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 593.7587918754102,
+      "success": true
+    },
+    {
+      "timestamp": 1781763476.2022734,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 191.57450743374437,
+      "success": true
+    },
+    {
+      "timestamp": 1781763476.2513318,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 210.91750983387726,
+      "success": true
+    },
+    {
+      "timestamp": 1781763476.338956,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 227.09655690769205,
+      "success": true
+    },
+    {
+      "timestamp": 1781763476.795652,
+      "endpoint": "Profile",
+      "status_code": 503,
+      "latency_ms": 251.1005603519823,
+      "success": false
+    },
+    {
+      "timestamp": 1781763476.8492093,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 220.9901519085496,
+      "success": true
+    },
+    {
+      "timestamp": 1781763476.9375987,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 191.57791863598794,
+      "success": true
+    },
+    {
+      "timestamp": 1781763476.9794118,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 551.1846801561234,
+      "success": true
+    },
+    {
+      "timestamp": 1781763477.0237398,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 263.14638039188276,
+      "success": true
+    },
+    {
+      "timestamp": 1781763477.162843,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 47.049264332695486,
+      "success": true
+    },
+    {
+      "timestamp": 1781763477.7604125,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 216.0131793587401,
+      "success": true
+    },
+    {
+      "timestamp": 1781763477.896119,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 212.72851042483836,
+      "success": true
+    },
+    {
+      "timestamp": 1781763478.270926,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 149.52330767672973,
+      "success": true
+    },
+    {
+      "timestamp": 1781763478.2824218,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 141.75751019599483,
+      "success": true
+    },
+    {
+      "timestamp": 1781763478.3283353,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 186.42344086603262,
+      "success": true
+    },
+    {
+      "timestamp": 1781763478.4036913,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 145.18536387317263,
+      "success": true
+    },
+    {
+      "timestamp": 1781763478.414793,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 201.410297806583,
+      "success": true
+    },
+    {
+      "timestamp": 1781763478.6992493,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 303.0649310362975,
+      "success": true
+    },
+    {
+      "timestamp": 1781763479.0916212,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 113.83955107283805,
+      "success": true
+    },
+    {
+      "timestamp": 1781763479.4710443,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 345.26187028656716,
+      "success": true
+    },
+    {
+      "timestamp": 1781763479.606963,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 386.9754643240851,
+      "success": true
+    },
+    {
+      "timestamp": 1781763479.7221847,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 192.4918978860626,
+      "success": true
+    },
+    {
+      "timestamp": 1781763479.77933,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 161.71005594192408,
+      "success": true
+    },
+    {
+      "timestamp": 1781763479.9122987,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 100.84670172940156,
+      "success": true
+    },
+    {
+      "timestamp": 1781763479.95618,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 146.59346967662475,
+      "success": true
+    },
+    {
+      "timestamp": 1781763480.0194213,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 86.44075328192778,
+      "success": true
+    },
+    {
+      "timestamp": 1781763480.0607147,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 122.60598138319799,
+      "success": true
+    },
+    {
+      "timestamp": 1781763480.2028198,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 293.1644507437777,
+      "success": true
+    },
+    {
+      "timestamp": 1781763480.2165382,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 177.84451192702352,
+      "success": true
+    },
+    {
+      "timestamp": 1781763480.4412282,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 191.07499519853184,
+      "success": true
+    },
+    {
+      "timestamp": 1781763480.8445628,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 209.4527337985867,
+      "success": true
+    },
+    {
+      "timestamp": 1781763480.862002,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 91.54177129459362,
+      "success": true
+    },
+    {
+      "timestamp": 1781763480.927382,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 531.6272630381324,
+      "success": true
+    },
+    {
+      "timestamp": 1781763481.041578,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 132.75134218965889,
+      "success": true
+    },
+    {
+      "timestamp": 1781763481.111336,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 293.1597405987352,
+      "success": true
+    },
+    {
+      "timestamp": 1781763481.2854457,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 204.22794558273304,
+      "success": true
+    },
+    {
+      "timestamp": 1781763481.5419388,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 214.51687226212402,
+      "success": true
+    },
+    {
+      "timestamp": 1781763481.7333338,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 292.5979508953171,
+      "success": true
+    },
+    {
+      "timestamp": 1781763482.343791,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 56.26470407708668,
+      "success": true
+    },
+    {
+      "timestamp": 1781763482.3946142,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 444.9631560993539,
+      "success": true
+    },
+    {
+      "timestamp": 1781763482.4069095,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 112.87115661074736,
+      "success": true
+    },
+    {
+      "timestamp": 1781763482.461569,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 384.57804976809183,
+      "success": true
+    },
+    {
+      "timestamp": 1781763482.4686632,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 503.86186182299423,
+      "success": true
+    },
+    {
+      "timestamp": 1781763482.5225024,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 772.6115623225074,
+      "success": true
+    },
+    {
+      "timestamp": 1781763483.1075373,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 272.19770090349283,
+      "success": true
+    },
+    {
+      "timestamp": 1781763483.1326678,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 619.140253707376,
+      "success": true
+    },
+    {
+      "timestamp": 1781763483.2323065,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 72.9301938038678,
+      "success": true
+    },
+    {
+      "timestamp": 1781763483.3270292,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 390.0709996770762,
+      "success": true
+    },
+    {
+      "timestamp": 1781763483.4005122,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 981.3845772635898,
+      "success": true
+    },
+    {
+      "timestamp": 1781763483.4084637,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 70.08875013994246,
+      "success": true
+    },
+    {
+      "timestamp": 1781763483.9484878,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 103.71655641856128,
+      "success": true
+    },
+    {
+      "timestamp": 1781763484.1430705,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 87.95500196938875,
+      "success": true
+    },
+    {
+      "timestamp": 1781763484.37476,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 154.89499232961674,
+      "success": true
+    },
+    {
+      "timestamp": 1781763484.5505798,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 174.31230929577066,
+      "success": true
+    },
+    {
+      "timestamp": 1781763485.222444,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 144.56316014632765,
+      "success": true
+    },
+    {
+      "timestamp": 1781763485.3042054,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 211.13635462157725,
+      "success": true
+    },
+    {
+      "timestamp": 1781763485.6440454,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 310.9113828515948,
+      "success": true
+    },
+    {
+      "timestamp": 1781763485.7188988,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 529.2820307446838,
+      "success": true
+    },
+    {
+      "timestamp": 1781763486.0868325,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 193.74780418905019,
+      "success": true
+    },
+    {
+      "timestamp": 1781763486.1266701,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 561.922740722491,
+      "success": true
+    },
+    {
+      "timestamp": 1781763486.6225142,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 191.21471705495975,
+      "success": true
+    },
+    {
+      "timestamp": 1781763486.7499847,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 134.72332117891835,
+      "success": true
+    },
+    {
+      "timestamp": 1781763486.824211,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 136.74629669641342,
+      "success": true
+    },
+    {
+      "timestamp": 1781763487.1557317,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 69.3498243921475,
+      "success": true
+    },
+    {
+      "timestamp": 1781763487.204317,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 608.0712124727308,
+      "success": true
+    },
+    {
+      "timestamp": 1781763487.3069646,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 292.1371998027971,
+      "success": true
+    },
+    {
+      "timestamp": 1781763487.595569,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 143.77792816481315,
+      "success": true
+    },
+    {
+      "timestamp": 1781763487.8862624,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 124.80409069739854,
+      "success": true
+    },
+    {
+      "timestamp": 1781763488.2475011,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 682.2390813973286,
+      "success": true
+    },
+    {
+      "timestamp": 1781763488.2499173,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 183.52591526538424,
+      "success": true
+    },
+    {
+      "timestamp": 1781763488.3463092,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 136.57650730081807,
+      "success": true
+    },
+    {
+      "timestamp": 1781763488.5486202,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 198.04884197738113,
+      "success": true
+    },
+    {
+      "timestamp": 1781763488.6772652,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 78.77236260518616,
+      "success": true
+    },
+    {
+      "timestamp": 1781763488.8498774,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 132.00329310850958,
+      "success": true
+    },
+    {
+      "timestamp": 1781763489.024857,
+      "endpoint": "Login",
+      "status_code": 502,
+      "latency_ms": 329.3274276161708,
+      "success": false
+    },
+    {
+      "timestamp": 1781763489.2884483,
+      "endpoint": "List Projects",
+      "status_code": 500,
+      "latency_ms": 655.178521664558,
+      "success": false
+    },
+    {
+      "timestamp": 1781763489.4184537,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 88.16129111705405,
+      "success": true
+    },
+    {
+      "timestamp": 1781763489.6499186,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 273.58053978835704,
+      "success": true
+    },
+    {
+      "timestamp": 1781763490.102886,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 252.06326151378602,
+      "success": true
+    },
+    {
+      "timestamp": 1781763490.1903713,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 108.5307223532393,
+      "success": true
+    },
+    {
+      "timestamp": 1781763490.2085066,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 666.5441948326413,
+      "success": true
+    },
+    {
+      "timestamp": 1781763490.296038,
+      "endpoint": "List Projects",
+      "status_code": 503,
+      "latency_ms": 493.1307334464095,
+      "success": false
+    },
+    {
+      "timestamp": 1781763490.357898,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 331.12034862522216,
+      "success": true
+    },
+    {
+      "timestamp": 1781763490.384536,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 228.12080651975725,
+      "success": true
+    },
+    {
+      "timestamp": 1781763490.3973818,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 371.1095296314327,
+      "success": true
+    },
+    {
+      "timestamp": 1781763490.6643,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 473.9988336379488,
+      "success": true
+    },
+    {
+      "timestamp": 1781763490.9906418,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 92.63522536883511,
+      "success": true
+    },
+    {
+      "timestamp": 1781763491.197848,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 72.68390981196147,
+      "success": true
+    },
+    {
+      "timestamp": 1781763491.2029648,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 296.6605911300519,
+      "success": true
+    },
+    {
+      "timestamp": 1781763491.305763,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 191.46134705474248,
+      "success": true
+    },
+    {
+      "timestamp": 1781763491.3939536,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 283.7595872941588,
+      "success": true
+    },
+    {
+      "timestamp": 1781763491.4150565,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 153.03025504433424,
+      "success": true
+    },
+    {
+      "timestamp": 1781763491.9062545,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 444.2927244278685,
+      "success": true
+    },
+    {
+      "timestamp": 1781763492.2090943,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 46.499023731474885,
+      "success": true
+    },
+    {
+      "timestamp": 1781763492.274584,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 185.55638102723958,
+      "success": true
+    },
+    {
+      "timestamp": 1781763492.4330127,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 78.42079650889067,
+      "success": true
+    },
+    {
+      "timestamp": 1781763492.5446765,
+      "endpoint": "List Projects",
+      "status_code": 500,
+      "latency_ms": 941.0042412212066,
+      "success": false
+    },
+    {
+      "timestamp": 1781763492.9753475,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 112.42301050358563,
+      "success": true
+    },
+    {
+      "timestamp": 1781763493.1992476,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 89.08993834442194,
+      "success": true
+    },
+    {
+      "timestamp": 1781763493.2950456,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 162.42690900700612,
+      "success": true
+    },
+    {
+      "timestamp": 1781763493.473273,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 963.7536758643715,
+      "success": true
+    },
+    {
+      "timestamp": 1781763493.480918,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 215.18816045219359,
+      "success": true
+    },
+    {
+      "timestamp": 1781763493.5007968,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 368.97732771698765,
+      "success": true
+    },
+    {
+      "timestamp": 1781763494.177314,
+      "endpoint": "Profile",
+      "status_code": 500,
+      "latency_ms": 831.5632329655092,
+      "success": false
+    },
+    {
+      "timestamp": 1781763494.2972004,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 167.7193808154099,
+      "success": true
+    },
+    {
+      "timestamp": 1781763495.1732798,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 494.6525777624943,
+      "success": true
+    },
+    {
+      "timestamp": 1781763495.3465793,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 105.92767573305557,
+      "success": true
+    },
+    {
+      "timestamp": 1781763495.4287746,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 218.59075709344006,
+      "success": true
+    },
+    {
+      "timestamp": 1781763495.4450605,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 141.36310004757445,
+      "success": true
+    },
+    {
+      "timestamp": 1781763495.5920413,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 97.17662491562697,
+      "success": true
+    },
+    {
+      "timestamp": 1781763495.7300396,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 115.57065730972153,
+      "success": true
+    },
+    {
+      "timestamp": 1781763495.7310443,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 61.7236755940533,
+      "success": true
+    },
+    {
+      "timestamp": 1781763496.2153404,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 95.46125813553428,
+      "success": true
+    },
+    {
+      "timestamp": 1781763496.3795323,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 48.134047265912514,
+      "success": true
+    },
+    {
+      "timestamp": 1781763496.6749654,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 67.48824355290046,
+      "success": true
+    },
+    {
+      "timestamp": 1781763496.767326,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 249.01243392652378,
+      "success": true
+    },
+    {
+      "timestamp": 1781763496.8248825,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 117.29162023602873,
+      "success": true
+    },
+    {
+      "timestamp": 1781763497.7315197,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 316.15581934043803,
+      "success": true
+    },
+    {
+      "timestamp": 1781763498.3906465,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 476.0874554694484,
+      "success": true
+    },
+    {
+      "timestamp": 1781763498.518397,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 281.88741817405935,
+      "success": true
+    },
+    {
+      "timestamp": 1781763498.9241974,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 512.2080435662617,
+      "success": true
+    },
+    {
+      "timestamp": 1781763499.0405548,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 250.37655432082795,
+      "success": true
+    },
+    {
+      "timestamp": 1781763499.6761875,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 638.2337321380254,
+      "success": true
+    },
+    {
+      "timestamp": 1781763499.7922974,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 141.30583157016252,
+      "success": true
+    },
+    {
+      "timestamp": 1781763500.0539916,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 138.101002429514,
+      "success": true
+    },
+    {
+      "timestamp": 1781763500.0626612,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 446.1466958503798,
+      "success": true
+    },
+    {
+      "timestamp": 1781763500.1659515,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 533.4556165263277,
+      "success": true
+    },
+    {
+      "timestamp": 1781763500.2369149,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 207.56759520297183,
+      "success": true
+    },
+    {
+      "timestamp": 1781763500.391436,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 227.62516794052806,
+      "success": true
+    },
+    {
+      "timestamp": 1781763500.4347725,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 48.758450697558594,
+      "success": true
+    },
+    {
+      "timestamp": 1781763500.720331,
+      "endpoint": "List Projects",
+      "status_code": 200,
+      "latency_ms": 369.9369985639371,
+      "success": true
+    },
+    {
+      "timestamp": 1781763501.1880114,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 95.21217964727549,
+      "success": true
+    },
+    {
+      "timestamp": 1781763501.3942773,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 65.33859046952472,
+      "success": true
+    },
+    {
+      "timestamp": 1781763501.5801055,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 218.6905656534057,
+      "success": true
+    },
+    {
+      "timestamp": 1781763502.0828872,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 93.80840980639442,
+      "success": true
+    },
+    {
+      "timestamp": 1781763502.1617339,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 445.9513658269893,
+      "success": true
+    },
+    {
+      "timestamp": 1781763502.222294,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 141.33310797971802,
+      "success": true
+    },
+    {
+      "timestamp": 1781763502.3076353,
+      "endpoint": "Login",
+      "status_code": 200,
+      "latency_ms": 1097.3302978597621,
+      "success": true
+    },
+    {
+      "timestamp": 1781763502.4428322,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 444.5053526258398,
+      "success": true
+    },
+    {
+      "timestamp": 1781763503.0016534,
+      "endpoint": "Root",
+      "status_code": 200,
+      "latency_ms": 78.08356170074852,
+      "success": true
+    },
+    {
+      "timestamp": 1781763503.0412104,
+      "endpoint": "Profile",
+      "status_code": 200,
+      "latency_ms": 135.2181858034867,
+      "success": true
+    }
+  ]
+}

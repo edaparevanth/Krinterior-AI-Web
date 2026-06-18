@@ -46,7 +46,7 @@ def main():
     # Step 2: Run dynamic tests
     run_pytest_and_get_results()
 
-    print("Generating E2E Excel Test Report for 200 test cases...")
+    print(f"Generating E2E Excel Test Report for {len(TEST_CASES)} test cases...")
     wb = openpyxl.Workbook()
     ws = wb.active
     ws.title = "E2E Test Report"
@@ -59,6 +59,8 @@ def main():
     ACCENT_COLOR = "DDEBF7"       # Light Ice Blue for subheaders
     PASS_FILL_COLOR = "E2EFDA"    # Soft Green
     PASS_TEXT_COLOR = "375623"
+    FAIL_FILL_COLOR = "FCE4D6"    # Soft Red/Peach
+    FAIL_TEXT_COLOR = "C00000"    # Dark Red
     
     # Font setups
     font_title = Font(name="Segoe UI", size=18, bold=True, color="FFFFFF")
@@ -72,6 +74,7 @@ def main():
     fill_header = PatternFill(start_color=PRIMARY_COLOR, end_color=PRIMARY_COLOR, fill_type="solid")
     fill_accent = PatternFill(start_color=ACCENT_COLOR, end_color=ACCENT_COLOR, fill_type="solid")
     fill_pass = PatternFill(start_color=PASS_FILL_COLOR, end_color=PASS_FILL_COLOR, fill_type="solid")
+    fill_fail = PatternFill(start_color=FAIL_FILL_COLOR, end_color=FAIL_FILL_COLOR, fill_type="solid")
     
     # Alignments
     align_center = Alignment(horizontal="center", vertical="center", wrap_text=True)
@@ -86,7 +89,7 @@ def main():
     )
     
     # 1. Title Banner
-    ws.merge_cells("A1:G2")
+    ws.merge_cells("A1:H2")
     title_cell = ws["A1"]
     title_cell.value = "KRINTERIOR AI - E2E TEST REPORT (SELENIUM & APPIUM)"
     title_cell.font = font_title
