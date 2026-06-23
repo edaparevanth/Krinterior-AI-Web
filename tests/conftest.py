@@ -1,8 +1,6 @@
 import os
 import sys
 import pytest
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 
 # Ensure the tests folder is on python path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -18,13 +16,16 @@ def base_url():
 @pytest.fixture(scope="function")
 def driver():
     """Initializes and returns a Selenium WebDriver instance with standard configurations."""
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")  # Run headless for CI/CD compatibility
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--window-size=1920,1080")
-    
     try:
+        from selenium import webdriver
+        from selenium.webdriver.chrome.options import Options
+        
+        chrome_options = Options()
+        chrome_options.add_argument("--headless")  # Run headless for CI/CD compatibility
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--window-size=1920,1080")
+        
         driver = webdriver.Chrome(options=chrome_options)
         driver.implicitly_wait(5)
         yield driver
@@ -36,7 +37,6 @@ def driver():
 @pytest.fixture(scope="function")
 def mobile_driver():
     """Returns a mock mobile driver context to represent Appium compatibility testing."""
-    # Mocking client connection since standard GitHub runner lacks emulator
     class MockMobileDriver:
         def get(self, url):
             pass
@@ -77,7 +77,6 @@ def pytest_sessionfinish(session, exitstatus):
     )
     from report_writer import write_excel_report
     
-    # Inspect what test categories were run
     ran_selenium = any(c.startswith("TC-SEL-") for c in test_results)
     ran_appium = any(c.startswith("TC-APP-") for c in test_results)
     ran_unit = any(c.startswith("TC-UNI-") for c in test_results)
