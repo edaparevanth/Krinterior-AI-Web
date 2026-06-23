@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Krinterior-AI-Web/static/css/main.0665c979.css",
-    "main.js": "/Krinterior-AI-Web/static/js/main.e04917df.js",
+    "main.js": "/Krinterior-AI-Web/static/js/main.5fb7feab.js",
     "index.html": "/Krinterior-AI-Web/index.html",
     "main.0665c979.css.map": "/Krinterior-AI-Web/static/css/main.0665c979.css.map",
-    "main.e04917df.js.map": "/Krinterior-AI-Web/static/js/main.e04917df.js.map"
+    "main.5fb7feab.js.map": "/Krinterior-AI-Web/static/js/main.5fb7feab.js.map"
   },
   "entrypoints": [
     "static/css/main.0665c979.css",
-    "static/js/main.e04917df.js"
+    "static/js/main.5fb7feab.js"
   ]
 }
