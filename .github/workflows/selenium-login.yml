@@ -196,9 +196,6 @@ jobs:
       - load-testing
     if: always()
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: https://edaparevanth.github.io/Krinterior-AI-Web/
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
