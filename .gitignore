@@ -86,3 +86,9 @@ android-sdk/
 credentials.json
 *.key
 .credentials
+
+# Local test reports and caches
+test_reports/*.xlsx
+test_reports/*.json
+.pytest_cache/
+
