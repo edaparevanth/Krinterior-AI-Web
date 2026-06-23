@@ -2,8 +2,8 @@ import os
 import sys
 import pytest
 
-# Ensure the tests folder is on python path
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# Ensure the tests folder is on python path without shadowing global libraries
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Global dictionary to collect outcomes
 test_results = {}
