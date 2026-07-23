@@ -176,7 +176,7 @@ jobs:
 
       - name: Run Load tests
         run: |
-          pytest tests/test_load.py -v || true
+          pytest tests/test_load.py -v
 
       - name: Upload Load Test Report
         if: always()

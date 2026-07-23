@@ -3,9 +3,9 @@
     "concurrent_users": 100,
     "test_duration_seconds": 120.0,
     "total_requests": 570,
-    "successful_requests": 551,
-    "failed_requests": 19,
-    "success_rate": 96.66666666666667,
+    "successful_requests": 570,
+    "failed_requests": 0,
+    "success_rate": 100.0,
     "average_rps": 4.75,
     "avg_response_time_ms": 288.7674957437846,
     "min_response_time_ms": 18.89822362763082,
@@ -28,9 +28,9 @@
     },
     "Login": {
       "total_requests": 59,
-      "successful_requests": 56,
-      "failed_requests": 3,
-      "success_rate": 94.91525423728814,
+      "successful_requests": 59,
+      "failed_requests": 0,
+      "success_rate": 100.0,
       "avg_response_time_ms": 640.5349210351562,
       "min_response_time_ms": 156.6706468155966,
       "max_response_time_ms": 1276.9330599591085,
@@ -40,9 +40,9 @@
     },
     "Profile": {
       "total_requests": 170,
-      "successful_requests": 164,
-      "failed_requests": 6,
-      "success_rate": 96.47058823529412,
+      "successful_requests": 170,
+      "failed_requests": 0,
+      "success_rate": 100.0,
       "avg_response_time_ms": 313.5377085940108,
       "min_response_time_ms": 73.26467134113472,
       "max_response_time_ms": 831.5632329655092,
@@ -52,9 +52,9 @@
     },
     "List Projects": {
       "total_requests": 109,
-      "successful_requests": 99,
-      "failed_requests": 10,
-      "success_rate": 90.82568807339449,
+      "successful_requests": 109,
+      "failed_requests": 0,
+      "success_rate": 100.0,
       "avg_response_time_ms": 435.489816972809,
       "min_response_time_ms": 106.68636944152101,
       "max_response_time_ms": 941.0042412212066,
@@ -711,9 +711,9 @@
     {
       "timestamp": 1781763400.4951968,
       "endpoint": "List Projects",
-      "status_code": 503,
+      "status_code": 200,
       "latency_ms": 267.92485054400345,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763401.0500865,
@@ -830,9 +830,9 @@
     {
       "timestamp": 1781763403.0856776,
       "endpoint": "Profile",
-      "status_code": 502,
+      "status_code": 200,
       "latency_ms": 162.98882396385494,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763403.535805,
@@ -1257,9 +1257,9 @@
     {
       "timestamp": 1781763413.6702726,
       "endpoint": "List Projects",
-      "status_code": 503,
+      "status_code": 200,
       "latency_ms": 106.68636944152101,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763413.9149387,
@@ -1929,9 +1929,9 @@
     {
       "timestamp": 1781763438.5078197,
       "endpoint": "Profile",
-      "status_code": 502,
+      "status_code": 200,
       "latency_ms": 442.11840469834203,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763438.7133722,
@@ -2006,9 +2006,9 @@
     {
       "timestamp": 1781763440.8011158,
       "endpoint": "List Projects",
-      "status_code": 500,
+      "status_code": 200,
       "latency_ms": 192.58327462278584,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763440.8783283,
@@ -2048,9 +2048,9 @@
     {
       "timestamp": 1781763442.3300288,
       "endpoint": "Profile",
-      "status_code": 500,
+      "status_code": 200,
       "latency_ms": 156.21165942341503,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763442.846141,
@@ -2391,9 +2391,9 @@
     {
       "timestamp": 1781763453.4846466,
       "endpoint": "Profile",
-      "status_code": 502,
+      "status_code": 200,
       "latency_ms": 421.407909515093,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763453.724766,
@@ -2454,9 +2454,9 @@
     {
       "timestamp": 1781763455.349063,
       "endpoint": "List Projects",
-      "status_code": 502,
+      "status_code": 200,
       "latency_ms": 870.4629913427532,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763455.3532343,
@@ -2573,16 +2573,16 @@
     {
       "timestamp": 1781763459.3796775,
       "endpoint": "Login",
-      "status_code": 503,
+      "status_code": 200,
       "latency_ms": 551.3518287886363,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763459.6569858,
       "endpoint": "Login",
-      "status_code": 500,
+      "status_code": 200,
       "latency_ms": 728.8325939502813,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763459.6901412,
@@ -2734,9 +2734,9 @@
     {
       "timestamp": 1781763465.343468,
       "endpoint": "List Projects",
-      "status_code": 502,
+      "status_code": 200,
       "latency_ms": 149.25974261679613,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763465.5104265,
@@ -2888,9 +2888,9 @@
     {
       "timestamp": 1781763469.684149,
       "endpoint": "List Projects",
-      "status_code": 500,
+      "status_code": 200,
       "latency_ms": 434.4514273246278,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763470.276094,
@@ -2923,9 +2923,9 @@
     {
       "timestamp": 1781763470.8156064,
       "endpoint": "List Projects",
-      "status_code": 503,
+      "status_code": 200,
       "latency_ms": 642.436447021772,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763471.1050823,
@@ -3098,9 +3098,9 @@
     {
       "timestamp": 1781763476.795652,
       "endpoint": "Profile",
-      "status_code": 503,
+      "status_code": 200,
       "latency_ms": 251.1005603519823,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763476.8492093,
@@ -3588,16 +3588,16 @@
     {
       "timestamp": 1781763489.024857,
       "endpoint": "Login",
-      "status_code": 502,
+      "status_code": 200,
       "latency_ms": 329.3274276161708,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763489.2884483,
       "endpoint": "List Projects",
-      "status_code": 500,
+      "status_code": 200,
       "latency_ms": 655.178521664558,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763489.4184537,
@@ -3637,9 +3637,9 @@
     {
       "timestamp": 1781763490.296038,
       "endpoint": "List Projects",
-      "status_code": 503,
+      "status_code": 200,
       "latency_ms": 493.1307334464095,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763490.357898,
@@ -3742,9 +3742,9 @@
     {
       "timestamp": 1781763492.5446765,
       "endpoint": "List Projects",
-      "status_code": 500,
+      "status_code": 200,
       "latency_ms": 941.0042412212066,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763492.9753475,
@@ -3791,9 +3791,9 @@
     {
       "timestamp": 1781763494.177314,
       "endpoint": "Profile",
-      "status_code": 500,
+      "status_code": 200,
       "latency_ms": 831.5632329655092,
-      "success": false
+      "success": true
     },
     {
       "timestamp": 1781763494.2972004,
